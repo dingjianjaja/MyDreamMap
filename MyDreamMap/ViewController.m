@@ -12,7 +12,8 @@
 
 @end
 
-NSString * const openstreetmap = @"http://tile.openstreetmap.org/{z}/{x}/{y}.png";
+//NSString * const openstreetmap = @"http://tile.openstreetmap.org/{z}/{x}/{y}.png";
+NSString * const openstreetmap = @"https://raw.githubusercontent.com/dingjianjaja/MyDreamMap/main/res/{z}/{x}/{y}.png";
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
