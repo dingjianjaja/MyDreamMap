@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -22,23 +23,50 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="9On-Ah-pV2"/>
                                 </connections>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrW-o4-Edh">
+                                <rect key="frame" x="320" y="815" width="30" height="30"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="zoomInBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PBw-d8-Qs2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXd-Ou-ppT">
+                                <rect key="frame" x="364" y="815" width="30" height="30"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="zoomOutBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RCs-Sv-YSl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guy-0q-Bxh">
+                                <rect key="frame" x="20" y="72" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="pXd-Ou-ppT" firstAttribute="centerY" secondItem="wrW-o4-Edh" secondAttribute="centerY" id="2Rg-Sg-ZRA"/>
                             <constraint firstItem="8dc-n1-1CM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="96Y-Fa-7wV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8dc-n1-1CM" secondAttribute="trailing" id="IaP-EH-xVo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pXd-Ou-ppT" secondAttribute="trailing" constant="20" id="OQt-T4-TFl"/>
+                            <constraint firstItem="guy-0q-Bxh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ob8-5r-sa9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pXd-Ou-ppT" secondAttribute="bottom" constant="17" id="Obt-Zx-DW8"/>
+                            <constraint firstItem="guy-0q-Bxh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="aGG-zl-JG0"/>
+                            <constraint firstItem="pXd-Ou-ppT" firstAttribute="leading" secondItem="wrW-o4-Edh" secondAttribute="trailing" constant="14" id="e3Z-z0-P8Q"/>
                             <constraint firstItem="8dc-n1-1CM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iPk-2M-MIg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8dc-n1-1CM" secondAttribute="bottom" id="rnn-Kz-LTy"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="8dc-n1-1CM" id="YPp-M0-cdF"/>
+                        <outlet property="zoomLevelTextView" destination="guy-0q-Bxh" id="wLV-pB-3X8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="91" y="94"/>
+            <point key="canvasLocation" x="89.855072463768124" y="93.75"/>
         </scene>
     </scenes>
     <resources>

@@ -16,6 +16,7 @@
 		F0CCCED8281441C600CAB1FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCCED7281441C600CAB1FE /* main.m */; };
 		F0CCCEE2281441C600CAB1FE /* MyDreamMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCCEE1281441C600CAB1FE /* MyDreamMapTests.m */; };
 		F0CCCEED281441C600CAB1FE /* MyDreamMapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCCEEC281441C600CAB1FE /* MyDreamMapUITests.m */; };
+		F0CCCEFD2819905B00CAB1FE /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCCEFC2819905B00CAB1FE /* MKMapView+ZoomLevel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		F0CCCEEC281441C600CAB1FE /* MyDreamMapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDreamMapUITests.m; sourceTree = "<group>"; };
 		F0CCCEEE281441C600CAB1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0CCCEFA281450B400CAB1FE /* Directions.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Directions.geojson; sourceTree = "<group>"; };
+		F0CCCEFB2819905B00CAB1FE /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
+		F0CCCEFC2819905B00CAB1FE /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				F0CCCEC9281441C300CAB1FE /* SceneDelegate.m */,
 				F0CCCECB281441C300CAB1FE /* ViewController.h */,
 				F0CCCECC281441C300CAB1FE /* ViewController.m */,
+				F0CCCEFB2819905B00CAB1FE /* MKMapView+ZoomLevel.h */,
+				F0CCCEFC2819905B00CAB1FE /* MKMapView+ZoomLevel.m */,
 				F0CCCECE281441C300CAB1FE /* Main.storyboard */,
 				F0CCCED1281441C600CAB1FE /* Assets.xcassets */,
 				F0CCCED3281441C600CAB1FE /* LaunchScreen.storyboard */,
@@ -268,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0CCCEFD2819905B00CAB1FE /* MKMapView+ZoomLevel.m in Sources */,
 				F0CCCECD281441C300CAB1FE /* ViewController.m in Sources */,
 				F0CCCEC7281441C300CAB1FE /* AppDelegate.m in Sources */,
 				F0CCCED8281441C600CAB1FE /* main.m in Sources */,
@@ -444,13 +450,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EUJ6KJ8TMF;
+				DEVELOPMENT_TEAM = A7FRU6ZJRL;
 				INFOPLIST_FILE = MyDreamMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chensx.MyDreamMap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mark.MyDreamMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,13 +469,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EUJ6KJ8TMF;
+				DEVELOPMENT_TEAM = A7FRU6ZJRL;
 				INFOPLIST_FILE = MyDreamMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chensx.MyDreamMap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mark.MyDreamMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
