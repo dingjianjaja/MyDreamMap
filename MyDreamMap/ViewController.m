@@ -8,21 +8,21 @@
 #import "ViewController.h"
 #import <MapKit/MapKit.h>
 #import "MKMapView+ZoomLevel.h"
+#import "DJTileOverlay.h"
 
 @interface ViewController ()<MKMapViewDelegate>
 
 @end
 
-//NSString * const openstreetmap = @"http://tile.openstreetmap.org/{z}/{x}/{y}.png";
-NSString * const openstreetmap = @"https://raw.githubusercontent.com/dingjianjaja/MyDreamMap/main/res/{z}/{x}/{y}.png";
+NSString * const openstreetmap = @"http://tile.openstreetmap.org/{z}/{x}/{y}.png";
+//NSString * const openstreetmap = @"https://raw.githubusercontent.com/dingjianjaja/MyDreamMap/main/res/{z}/{x}/{y}.png";
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
-@property (strong,nonatomic) MKTileOverlay *customOverlay;
 @property (strong,nonatomic) CLLocationManager *locationM;
 @property (strong,nonatomic) CLGeocoder *geocoder;
 @property (weak, nonatomic) IBOutlet UILabel *zoomLevelTextView;
-
+@property (strong,nonatomic) DJTileOverlay *customOverlay;
 @end
 
 @implementation ViewController
@@ -130,9 +130,9 @@ NSString * const openstreetmap = @"https://raw.githubusercontent.com/dingjianjaj
     }];
 }
 
-- (MKTileOverlay *)customOverlay{
+- (DJTileOverlay *)customOverlay{
     if (!_customOverlay) {
-        _customOverlay = [[MKTileOverlay alloc] initWithURLTemplate:openstreetmap];
+        _customOverlay = [[DJTileOverlay alloc] initWithURLTemplate:openstreetmap];
         _customOverlay.canReplaceMapContent = YES;
     }
     return _customOverlay;

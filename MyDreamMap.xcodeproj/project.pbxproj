@@ -17,6 +17,9 @@
 		F0CCCEE2281441C600CAB1FE /* MyDreamMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCCEE1281441C600CAB1FE /* MyDreamMapTests.m */; };
 		F0CCCEED281441C600CAB1FE /* MyDreamMapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCCEEC281441C600CAB1FE /* MyDreamMapUITests.m */; };
 		F0CCCEFD2819905B00CAB1FE /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCCEFC2819905B00CAB1FE /* MKMapView+ZoomLevel.m */; };
+
+		F0D0D62828509DD300E9FF3C /* DJTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D0D62728509DD300E9FF3C /* DJTileOverlay.m */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +59,13 @@
 		F0CCCEEC281441C600CAB1FE /* MyDreamMapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDreamMapUITests.m; sourceTree = "<group>"; };
 		F0CCCEEE281441C600CAB1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0CCCEFA281450B400CAB1FE /* Directions.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Directions.geojson; sourceTree = "<group>"; };
+
 		F0CCCEFB2819905B00CAB1FE /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
 		F0CCCEFC2819905B00CAB1FE /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
+
+		F0D0D62628509DD300E9FF3C /* DJTileOverlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTileOverlay.h; sourceTree = "<group>"; };
+		F0D0D62728509DD300E9FF3C /* DJTileOverlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTileOverlay.m; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,8 @@
 				F0CCCED6281441C600CAB1FE /* Info.plist */,
 				F0CCCED7281441C600CAB1FE /* main.m */,
 				F0CCCEFA281450B400CAB1FE /* Directions.geojson */,
+				F0D0D62628509DD300E9FF3C /* DJTileOverlay.h */,
+				F0D0D62728509DD300E9FF3C /* DJTileOverlay.m */,
 			);
 			path = MyDreamMap;
 			sourceTree = "<group>";
@@ -277,6 +287,7 @@
 				F0CCCECD281441C300CAB1FE /* ViewController.m in Sources */,
 				F0CCCEC7281441C300CAB1FE /* AppDelegate.m in Sources */,
 				F0CCCED8281441C600CAB1FE /* main.m in Sources */,
+				F0D0D62828509DD300E9FF3C /* DJTileOverlay.m in Sources */,
 				F0CCCECA281441C300CAB1FE /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
