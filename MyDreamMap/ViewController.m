@@ -9,6 +9,8 @@
 #import <MapKit/MapKit.h>
 #import "MKMapView+ZoomLevel.h"
 #import "DJTileOverlay.h"
+#import "DJImagePicker.h"
+#import "DJEditStoryViewController.h"
 
 @interface ViewController ()<MKMapViewDelegate>
 
@@ -40,6 +42,9 @@ NSString * const openstreetmap = @"http://tile.openstreetmap.org/{z}/{x}/{y}.png
     self.geocoder = [[CLGeocoder alloc] init];
     
     [self.mapView addOverlay:self.customOverlay];
+    
+    
+    
 }
 
 
@@ -47,12 +52,22 @@ NSString * const openstreetmap = @"http://tile.openstreetmap.org/{z}/{x}/{y}.png
 #pragma mark Aciton
 
 - (void)tapPress:(UIGestureRecognizer*)gestureRecognizer {
+    if (self.mapView.zoomLevel  == 10) {
+        
+        
+        return;
+    }
+    NSLog(@"%f",self.mapView.zoomLevel);
     
     CGPoint touchPoint = [gestureRecognizer locationInView:self.mapView];//这里touchPoint是点击的某点在地图控件中的位置
     CLLocationCoordinate2D touchMapCoordinate =
     [self.mapView convertPoint:touchPoint toCoordinateFromView:self.mapView];//这里touchMapCoordinate就是该点的经纬度了
     [self getAddressByLatitude:touchMapCoordinate.latitude longitude:touchMapCoordinate.longitude];
 //    [self showDialog:[NSString stringWithFormat:@"经度：%f\n纬度：%f\n地址：%@",touchMapCoordinate.longitude,touchMapCoordinate.latitude,address]];
+}
+- (IBAction)backToImageLayer:(UIButton *)sender {
+    
+    [self.mapView setRegion:MKCoordinateRegionMake(self.mapView.region.center, MKCoordinateSpanMake(0.74165710274547081, 0.49695225506195584)) animated:YES];
 }
 
 - (void) showDialog:(NSString *)msg{
@@ -62,6 +77,16 @@ NSString * const openstreetmap = @"http://tile.openstreetmap.org/{z}/{x}/{y}.png
     }]];
     [self presentViewController:alert animated:true completion:nil];
 }
+
+- (IBAction)chooseImage:(UIButton *)sender {
+    [DJImagePicker.sharedInstance getImage:self didDone:^(HXPhotoModel * _Nonnull photoModel) {
+        
+        DJEditStoryViewController *editVc = [[DJEditStoryViewController alloc] init];
+                        editVc.photoModel = photoModel;
+    [self.navigationController pushViewController:editVc animated:YES];
+    }];
+}
+
 // 缩小
 - (IBAction)zoomOutBtnClick:(UIButton *)sender {
     

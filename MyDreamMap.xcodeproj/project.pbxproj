@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DCE2765C6324DA78667E28E8 /* libPods-MyDreamMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D7AA0F39A7DF60D04E96B5 /* libPods-MyDreamMap.a */; };
 		F0CCCEC7281441C300CAB1FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCCEC6281441C300CAB1FE /* AppDelegate.m */; };
 		F0CCCECA281441C300CAB1FE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCCEC9281441C300CAB1FE /* SceneDelegate.m */; };
 		F0CCCECD281441C300CAB1FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCCECC281441C300CAB1FE /* ViewController.m */; };
@@ -17,9 +18,10 @@
 		F0CCCEE2281441C600CAB1FE /* MyDreamMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCCEE1281441C600CAB1FE /* MyDreamMapTests.m */; };
 		F0CCCEED281441C600CAB1FE /* MyDreamMapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCCEEC281441C600CAB1FE /* MyDreamMapUITests.m */; };
 		F0CCCEFD2819905B00CAB1FE /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCCEFC2819905B00CAB1FE /* MKMapView+ZoomLevel.m */; };
-
 		F0D0D62828509DD300E9FF3C /* DJTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D0D62728509DD300E9FF3C /* DJTileOverlay.m */; };
-
+		F0D0D62C285184FD00E9FF3C /* DJImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D0D62B285184FD00E9FF3C /* DJImagePicker.m */; };
+		F0D0D63028519DF200E9FF3C /* DJEditStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D0D62E28519DF200E9FF3C /* DJEditStoryViewController.m */; };
+		F0D0D63128519DF200E9FF3C /* DJEditStoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D0D62F28519DF200E9FF3C /* DJEditStoryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A850859089BFD4F50E443B9 /* Pods-MyDreamMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDreamMap.debug.xcconfig"; path = "Target Support Files/Pods-MyDreamMap/Pods-MyDreamMap.debug.xcconfig"; sourceTree = "<group>"; };
+		D352F512238F7BCFCDFE242F /* Pods-MyDreamMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDreamMap.release.xcconfig"; path = "Target Support Files/Pods-MyDreamMap/Pods-MyDreamMap.release.xcconfig"; sourceTree = "<group>"; };
+		D4D7AA0F39A7DF60D04E96B5 /* libPods-MyDreamMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyDreamMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CCCEC2281441C300CAB1FE /* MyDreamMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDreamMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CCCEC5281441C300CAB1FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0CCCEC6281441C300CAB1FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -59,13 +64,15 @@
 		F0CCCEEC281441C600CAB1FE /* MyDreamMapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDreamMapUITests.m; sourceTree = "<group>"; };
 		F0CCCEEE281441C600CAB1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0CCCEFA281450B400CAB1FE /* Directions.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Directions.geojson; sourceTree = "<group>"; };
-
 		F0CCCEFB2819905B00CAB1FE /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
 		F0CCCEFC2819905B00CAB1FE /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
-
 		F0D0D62628509DD300E9FF3C /* DJTileOverlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTileOverlay.h; sourceTree = "<group>"; };
 		F0D0D62728509DD300E9FF3C /* DJTileOverlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTileOverlay.m; sourceTree = "<group>"; };
-
+		F0D0D62A285184FD00E9FF3C /* DJImagePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJImagePicker.h; sourceTree = "<group>"; };
+		F0D0D62B285184FD00E9FF3C /* DJImagePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJImagePicker.m; sourceTree = "<group>"; };
+		F0D0D62D28519DF200E9FF3C /* DJEditStoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJEditStoryViewController.h; sourceTree = "<group>"; };
+		F0D0D62E28519DF200E9FF3C /* DJEditStoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJEditStoryViewController.m; sourceTree = "<group>"; };
+		F0D0D62F28519DF200E9FF3C /* DJEditStoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DJEditStoryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCE2765C6324DA78667E28E8 /* libPods-MyDreamMap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +101,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		528216653AADC8D7B9B6C44E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4D7AA0F39A7DF60D04E96B5 /* libPods-MyDreamMap.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C11D2135BC49A8C077E98B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A850859089BFD4F50E443B9 /* Pods-MyDreamMap.debug.xcconfig */,
+				D352F512238F7BCFCDFE242F /* Pods-MyDreamMap.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F0CCCEB9281441C300CAB1FE = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +125,8 @@
 				F0CCCEE0281441C600CAB1FE /* MyDreamMapTests */,
 				F0CCCEEB281441C600CAB1FE /* MyDreamMapUITests */,
 				F0CCCEC3281441C300CAB1FE /* Products */,
+				8C11D2135BC49A8C077E98B1 /* Pods */,
+				528216653AADC8D7B9B6C44E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +143,7 @@
 		F0CCCEC4281441C300CAB1FE /* MyDreamMap */ = {
 			isa = PBXGroup;
 			children = (
+				F0D0D629285184D000E9FF3C /* DJImagePicker */,
 				F0CCCEC5281441C300CAB1FE /* AppDelegate.h */,
 				F0CCCEC6281441C300CAB1FE /* AppDelegate.m */,
 				F0CCCEC8281441C300CAB1FE /* SceneDelegate.h */,
@@ -154,6 +182,18 @@
 			path = MyDreamMapUITests;
 			sourceTree = "<group>";
 		};
+		F0D0D629285184D000E9FF3C /* DJImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				F0D0D62A285184FD00E9FF3C /* DJImagePicker.h */,
+				F0D0D62B285184FD00E9FF3C /* DJImagePicker.m */,
+				F0D0D62D28519DF200E9FF3C /* DJEditStoryViewController.h */,
+				F0D0D62E28519DF200E9FF3C /* DJEditStoryViewController.m */,
+				F0D0D62F28519DF200E9FF3C /* DJEditStoryViewController.xib */,
+			);
+			path = DJImagePicker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0CCCEF1281441C600CAB1FE /* Build configuration list for PBXNativeTarget "MyDreamMap" */;
 			buildPhases = (
+				4ABD63ED499C9EEF166D12D2 /* [CP] Check Pods Manifest.lock */,
 				F0CCCEBE281441C300CAB1FE /* Sources */,
 				F0CCCEBF281441C300CAB1FE /* Frameworks */,
 				F0CCCEC0281441C300CAB1FE /* Resources */,
+				911F2F692FE48066010CC5C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,6 +300,7 @@
 			files = (
 				F0CCCED5281441C600CAB1FE /* LaunchScreen.storyboard in Resources */,
 				F0CCCED2281441C600CAB1FE /* Assets.xcassets in Resources */,
+				F0D0D63128519DF200E9FF3C /* DJEditStoryViewController.xib in Resources */,
 				F0CCCED0281441C300CAB1FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,12 +321,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4ABD63ED499C9EEF166D12D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyDreamMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		911F2F692FE48066010CC5C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDreamMap/Pods-MyDreamMap-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDreamMap/Pods-MyDreamMap-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyDreamMap/Pods-MyDreamMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F0CCCEBE281441C300CAB1FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F0CCCEFD2819905B00CAB1FE /* MKMapView+ZoomLevel.m in Sources */,
+				F0D0D62C285184FD00E9FF3C /* DJImagePicker.m in Sources */,
+				F0D0D63028519DF200E9FF3C /* DJEditStoryViewController.m in Sources */,
 				F0CCCECD281441C300CAB1FE /* ViewController.m in Sources */,
 				F0CCCEC7281441C300CAB1FE /* AppDelegate.m in Sources */,
 				F0CCCED8281441C600CAB1FE /* main.m in Sources */,
@@ -457,6 +544,7 @@
 		};
 		F0CCCEF2281441C600CAB1FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A850859089BFD4F50E443B9 /* Pods-MyDreamMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -476,6 +564,7 @@
 		};
 		F0CCCEF3281441C600CAB1FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D352F512238F7BCFCDFE242F /* Pods-MyDreamMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

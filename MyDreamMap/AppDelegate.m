@@ -6,6 +6,8 @@
 //
 
 #import "AppDelegate.h"
+#import <LeanCloudObjc/Foundation.h>
+
 
 @interface AppDelegate ()
 
@@ -16,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [LCApplication setApplicationId:@"zkRVyTsal0D5qYAVgjLERSTx-gzGzoHsz"
+                          clientKey:@"zw1tCkQXzGbjisRFGIk4qYxY"
+                    serverURLString:@"https://zkrvytsa.lc-cn-n1-shared.com"];
+    // 在 Application 初始化代码执行之前执行
+    [LCApplication setAllLogsEnabled:true];
     return YES;
 }
 

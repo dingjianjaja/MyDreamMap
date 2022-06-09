@@ -1,0 +1,44 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - HXPhotoPicker/SDWebImage (3.3.1):
+    - SDWebImage (~> 5.0)
+  - LeanCloudObjc/Foundation (13.9.0)
+  - SDWebImage (5.12.2):
+    - SDWebImage/Core (= 5.12.2)
+  - SDWebImage/Core (5.12.2)
+
+DEPENDENCIES:
+  - AFNetworking
+  - HXPhotoPicker/SDWebImage (~> 3.3.1)
+  - LeanCloudObjc/Foundation
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - HXPhotoPicker
+    - LeanCloudObjc
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  HXPhotoPicker: f1274d0c931ad8564e0f23f33fe8b6110b639bd7
+  LeanCloudObjc: e74f2eb6892ddf336c397b24a4619566da34bcd6
+  SDWebImage: 240e5c12b592fb1268c1d03b8c90d90e8c2ffe82
+
+PODFILE CHECKSUM: 23ab83643965694498c63bf76bda31889d0edac4
+
+COCOAPODS: 1.10.1
